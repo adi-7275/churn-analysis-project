@@ -39,6 +39,8 @@ This project analyzes customer churn using Python, SQL, Pandas, NumPy, Matplotli
 9. Business Insights
 ---
 
+---
+
 # 📊 Project Visualizations
 
 ## Plan vs Churn Rate
@@ -55,13 +57,13 @@ This project analyzes customer churn using Python, SQL, Pandas, NumPy, Matplotli
 
 ## Correlation Heatmap
 
-![Correlation Heatmap](grid2.png)
+![Correlation Heatmap](correlation%20heatmap.png)
 
 ---
 
-## Customer Distribution
+## Pivot Table
 
-![Customer Distribution](grid.png)
+![Pivot Table](Table.png)
 
 ---
 
@@ -70,6 +72,14 @@ This project analyzes customer churn using Python, SQL, Pandas, NumPy, Matplotli
 ![Monthly Churn Trend](Churned%20customer%20vs%20Month.png)
 
 ---
+
+# ⭐ Key Insights
+
+- Basic plan customers have the highest churn rate.
+- Premium plan customers have the lowest churn rate.
+- Churn risk has a strong positive correlation with churn score.
+- Monthly churn peaked in September.
+- Data visualization helps identify customer behavior patterns.
 
 # ⭐ Key Insights
 
