@@ -70,6 +70,17 @@ This project analyzes customer churn using Python, SQL, Pandas, NumPy, Matplotli
 ## Monthly Churn Trend
 
 ![Monthly Churn Trend](Churned%20customer%20vs%20Month.png)
+---
+
+## Customer Distribution
+
+![Customer Distribution](grid.png)
+
+---
+
+## Additional Analysis
+
+![Additional Analysis](grid2.png)
 
 ---
 
