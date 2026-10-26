@@ -2,133 +2,191 @@
 
 ## 📌 Project Overview
 
-This project analyzes customer churn using Python, SQL, Pandas, NumPy, Matplotlib, Seaborn, and SQLite. The objective is to identify the factors influencing customer churn and generate actionable business insights.
+Customer Churn Analysis is a data analytics project that analyzes customer behavior, identifies churn patterns, and generates business insights to help companies improve customer retention.
 
----
+This project uses Python, SQL, Pandas, NumPy, Matplotlib, Seaborn, and SQLite to clean, analyze, and visualize customer data.
 
-## 🛠️ Tools & Technologies
+## 🎯 Project Objectives
 
-- Python
-- SQL (SQLite)
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Jupyter Notebook
+* Analyze customer churn and retention rates.
+* Identify churn patterns across subscription plans.
+* Analyze customer complaints and support escalations.
+* Calculate average revenue per user (ARPU).
+* Measure customer tenure and revenue at risk.
+* Explore relationships between customer attributes and churn.
+* Create visualizations to communicate business insights.
 
----
+## 🛠️ Technologies Used
+
+* **Python** — Data analysis and processing
+* **Pandas** — Data manipulation and cleaning
+* **NumPy** — Numerical computations
+* **Matplotlib** — Data visualization
+* **Seaborn** — Statistical visualization
+* **SQL** — Data querying and analysis
+* **SQLite** — Database management
+* **Jupyter Notebook** — Interactive coding and analysis
+* **OpenPyXL** — Reading Excel files
 
 ## 📂 Project Files
 
-- churn_analysis.ipynb
-- customer_churn.db
-- customer_churn_data_raw.xlsx
+| File                           | Description                           |
+| ------------------------------ | ------------------------------------- |
+| `churn_analysis.ipynb`         | Main notebook containing the analysis |
+| `customer_churn.db`            | SQLite database                       |
+| `customer_churn_data_raw.xlsx` | Raw customer dataset                  |
+| `requirements.txt`             | Required Python packages              |
+| `README.md`                    | Project documentation                 |
 
----
+## 🔄 Project Workflow
 
-## 📈 Project Workflow
+### 1. Data Import
 
-1. Import Libraries
-2. Import Database
-3. Data Cleaning
-4. Exploratory Data Analysis (EDA)
-5. SQL Queries
-6. Customer Segmentation
-7. Churn Analysis
-8. Data Visualization
-9. Business Insights
----
+* Import customer data from Excel and SQLite.
+* Load database tables into Pandas DataFrames.
+* Inspect database tables and columns.
 
----
+### 2. Data Cleaning
 
-# 📊 Project Visualizations
+* Rename columns.
+* Remove unnecessary columns.
+* Handle missing values.
+* Standardize categorical values.
+* Convert columns to appropriate data types.
+* Clean and prepare customer, subscription, and support data.
 
-## Plan vs Churn Rate
+### 3. Feature Engineering
 
-![Plan vs Churn Rate](Plan%20vs%20churn%20rate.png)
+* Create a churn flag using cancellation dates.
+* Merge customer and support datasets.
+* Prepare data for analysis.
+* Export processed data when required.
 
----
+### 4. Exploratory Data Analysis
 
-## State vs Churn Rate
+Analyze important customer metrics, including:
 
-![State vs Churn Rate](State%20vs%20churn%20rate.png)
+* Customer churn rate
+* Customer retention rate
+* Churn by subscription plan
+* Churn by geographical location
+* Average revenue per user (ARPU)
+* Average customer tenure
+* Revenue at risk
+* Support escalation rate
+* Average complaints per user
+* Correlation between escalation and churn
+* Customer churn risk
 
----
+### 5. Data Visualization
 
-## Correlation Heatmap
+Create visualizations using Matplotlib and Seaborn, including:
 
-![Correlation Heatmap](correlation%20heatmap.png)
+* Monthly churn trends
+* Churn rate by subscription plan
+* Churn by geographical location
+* Correlation heatmaps
+* Pair plots
+* Categorical comparison plots
+* Pivot tables
 
----
+### 6. SQL Analysis
 
-## Pivot Table
+Use SQLite and SQL queries to explore database tables, retrieve records, and perform data analysis.
 
-![Pivot Table](Table.png)
+## 📈 Key Result
 
----
+The notebook calculates a **customer churn rate of 28.57%** for the dataset used in the analysis.
 
-## Monthly Churn Trend
+This metric represents the proportion of customers classified as churned under the notebook's calculation.
 
-![Monthly Churn Trend](Churned%20customer%20vs%20Month.png)
----
+Other analyses explore customer retention, subscription plans, revenue at risk, customer complaints, and support escalations.
 
-## Customer Distribution
+## 💻 How to Run the Project
 
-![Customer Distribution](grid.png)
+### Step 1: Install Python
 
----
+Download Python from the official website:
 
-## Additional Analysis
+https://www.python.org/downloads/
 
-![Additional Analysis](grid2.png)
+### Step 2: Download the Project
 
----
+Download or clone this repository:
 
-# ⭐ Key Insights
+```bash
+git clone https://github.com/adi-7275/churn-analysis-project.git
+```
 
-- Basic plan customers have the highest churn rate.
-- Premium plan customers have the lowest churn rate.
-- Churn risk has a strong positive correlation with churn score.
-- Monthly churn peaked in September.
-- Data visualization helps identify customer behavior patterns.
+Alternatively, download the repository as a ZIP file and extract it.
 
-# ⭐ Key Insights
+### Step 3: Open the Project Folder
 
-- Basic plan customers have the highest churn rate.
-- Premium customers have the lowest churn rate.
-- Churn risk is strongly correlated with churn score.
-- Monthly churn peaked during September.
-- Visualizations help identify customer behavior patterns.
+Open Command Prompt or Terminal and navigate to the project directory.
 
+### Step 4: Install Dependencies
 
----
+Run:
 
-## 📊 Key Analysis
+```bash
+pip install -r requirements.txt
+```
 
-- Customer Churn Rate
-- Monthly Charges Analysis
-- Plan Type Analysis
-- Customer Support Analysis
-- Subscription Analysis
-- Pivot Tables
-- SQL Queries
-- Data Visualization
+If the requirements file is unavailable or incomplete, install the main libraries using:
 
----
+```bash
+pip install numpy pandas matplotlib seaborn openpyxl sqlite-utils jupyter
+```
 
-## 🚀 Skills Demonstrated
+### Step 5: Launch Jupyter Notebook
 
-- Data Cleaning
-- SQL
-- Exploratory Data Analysis
-- Data Visualization
-- Business Intelligence
-- Customer Analytics
+Run:
 
----
+```bash
+jupyter notebook
+```
+
+### Step 6: Run the Notebook
+
+1. Open `churn_analysis.ipynb`.
+2. Execute the cells from top to bottom.
+3. Ensure the Excel dataset and SQLite database are in the expected location.
+4. Review the tables, calculated metrics, and visualizations.
+
+**Note:** An internet connection is required for the initial download and installation of Python packages. After installation, the project can generally run offline, provided all required files and packages are available locally.
+
+## 💡 Business Value
+
+Customer churn analysis can help businesses:
+
+* Understand customer attrition patterns.
+* Identify customer segments with higher churn.
+* Evaluate subscription and revenue trends.
+* Investigate potential relationships between customer support and churn.
+* Develop data-driven customer retention strategies.
+
+These analyses can support business decisions, but identifying correlation alone does not establish the causes of churn.
+
+## 🎓 Skills Demonstrated
+
+* Data cleaning and preprocessing
+* Exploratory data analysis (EDA)
+* Python programming
+* SQL querying
+* SQLite database management
+* Feature engineering
+* Customer analytics
+* Statistical visualization
+* Business insight generation
 
 ## 👨‍💻 Author
 
-**Aditya Srivastava**
+**Project:** Customer Churn Analysis and Customer Intelligence
 
-GitHub: https://github.com/adi-7275
+**Author credited in the notebook:** Rishabh Mishra
+
+**GitHub Repository:** https://github.com/adi-7275/churn-analysis-project
+
+## 📄 License
+
+This project repository includes an MIT License. Refer to the `LICENSE` file for the applicable terms.
